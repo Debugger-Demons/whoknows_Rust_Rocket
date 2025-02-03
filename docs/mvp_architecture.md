@@ -4,12 +4,26 @@
 This document explains how our C# application is structured and how the different parts work together.
 
 ## Basic Structure
-Our application follows a layered architecture pattern:
+Our application follows a Domain Driven Design 
 
 ```
-      [Controllers] → [Services] → [Repositories] → Database
-          ↓             ↓             ↓
-        [Models]      [Models]      [Models]
+    [db]
+      [schema.sql]
+      [whoknows.db]
+      [WhoKnowsContext.db]
+
+    [domains]
+      [pages] 
+        [Controllers] → [Services] → [Repositories] → Database
+            ↓             ↓             ↓
+          [page]        [page]        [page]
+      [users]
+        [Controllers] → [Services] → [Repositories] → Database
+            ↓             ↓             ↓
+          [user]        [user]        [user]
+
+    [Program.cs]
+
 ```
 
 ## Components Explained

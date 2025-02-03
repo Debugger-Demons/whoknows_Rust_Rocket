@@ -1,3 +1,10 @@
+
+using Microsoft.EntityFrameworkCore;
+using whoknows_c_sharp.db;
+using whoknows_c_sharp.domains.pages;
+using whoknows_c_sharp.domains.users;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // --------- Controllers implemented ---------

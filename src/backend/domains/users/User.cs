@@ -1,13 +1,13 @@
 
 // Models/User.cs
-namespace whoknows_c_sharp.Models;
+namespace whoknows_c_sharp.domains.users;
 
 public class User
 {
     public int Id { get; set; }  // PK
-    public string Username { get; set; }
-    public string Email { get; set; }
-    public string Password { get; set; }  // note: for prod need hashing here
+    public required string Username { get; set; }
+    public required string Email { get; set; }
+    public required string Password { get; set; }  // note: for prod need hashing here
 }
 
 /*

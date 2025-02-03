@@ -1,7 +1,7 @@
 
 // Repositories/IRepository.cs
 
-namespace whoknows_c_sharp.Repositories;
+namespace whoknows_c_sharp.domains.pages;
 
 public interface IRepository<T> where T : class
 {

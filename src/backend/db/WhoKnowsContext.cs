@@ -1,7 +1,9 @@
 
-// Data/WhoKnowsContext.cs
+// src/backend/db/WhoKnowsContext.cs
 using Microsoft.EntityFrameworkCore;
-using whoknows_c_sharp.Models;
+using whoknows_c_sharp.domains.pages;
+using whoknows_c_sharp.domains.users;
+namespace whoknows_c_sharp.db;
 
 public class WhoKnowsContext : DbContext
 {

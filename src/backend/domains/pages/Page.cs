@@ -1,14 +1,14 @@
 
-// Models/Page.cs
-namespace whoknows_c_sharp.Models;
+// src/backend/domain/pages/Page.cs
+namespace whoknows_c_sharp.domains.pages;
 
 public class Page
 {
-    public string Title { get; set; }  // PK
-    public string Url { get; set; }
-    public string Language { get; set; } = "en";  // Default value
+    public required string Title { get; set; }  // PK
+    public required string Url { get; set; }
+    public required string Language { get; set; } = "en";  // Default value
     public DateTime LastUpdated { get; set; }
-    public string Content { get; set; }
+    public required string Content { get; set; }
 }
 
 /*

@@ -1,9 +1,10 @@
-// Repositories/PageRepository.cs
+// backend/domains/pages/PageRepository.cs
 using Microsoft.EntityFrameworkCore;
-using whoknows_c_sharp.Models;
-using whoknows_c_sharp.Data;
 
-namespace whoknows_c_sharp.Repositories
+using whoknows_c_sharp.db;
+using whoknows_c_sharp.domains.pages;
+
+namespace whoknows_c_sharp.domains.pages
 {
     public class PageRepository : IRepository<Page>
     {
